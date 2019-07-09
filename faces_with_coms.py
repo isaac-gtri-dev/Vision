@@ -60,7 +60,7 @@ while(True):
 			#publish
 			count = 0
 			if id_ in name == id_ :
-				count + 1
+				count += 1
 				if count = 5:
 					pubnub.publish().channel('awesomeChannel').message(name).pn_async(publish_callback)
 					count = 0
