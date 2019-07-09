@@ -57,7 +57,14 @@ while(True):
 			color = (255, 255, 255)
 			stroke = 2
 			cv2.putText(frame, name, (x,y), font, 1, color, stroke, cv2.LINE_AA)
-			pubnub.publish().channel('awesomeChannel').message(newlabels[id_]).pn_async(publish_callback)
+			#publish
+			count = 0
+			if id_ in name == id_ :
+				count + 1
+				if count = 5:
+					pubnub.publish().channel('awesomeChannel').message(name).pn_async(publish_callback)
+					count = 0
+			
 			
 			
 		img_item = "my-image.png"
