@@ -1,6 +1,6 @@
 #THIS IS THE FINAL PRODUCT 
 #imports for pubnub
-#keep in mind pubnub is a indpendend server and has a limited amount you can send
+#keep in mind pubnub is a indpendent server and has a limited amount you can send
 from pubnub.callbacks import SubscribeCallback 
 from pubnub.enums import PNStatusCategory  
 from pubnub.pnconfiguration import PNConfiguration  
